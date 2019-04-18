@@ -91,4 +91,21 @@ void display1()
         cout<<"Stack is empty";
 }
 //=============================Stack completed=======================//
-
+//-----------------------------------------------------------------------------------------------------//
+node* createnode(int value)
+{
+	struct node *temp, *s;
+	temp =new(struct node);
+	if (temp == NULL)
+    {
+        cout<<"Memory not allocated "<<endl;
+        return 0;
+    }
+    else
+    {
+        temp->info = value;
+        temp->next = NULL;     
+        return temp;
+    }
+}
+//-----------------------------------------------------------------------------------------------------//
