@@ -87,8 +87,121 @@ void display1()
         cout<<stack[i]<<" ";
         cout<<endl;
   }
+
 	else
         cout<<"Stack is empty";
 }
 //=============================Stack completed=======================//
+
+
+//Sarthak starts//
+void queue1()//function 2= queue implementation//
+{
+
+		int num2,op1;
+		void Enqueue();
+		void Dequeue();
+		void Display();
+		do
+		{
+		    cout<<"QUEUE IMPLEMENTATION"<<endl;
+        	cout<<"1)Insert in the queue"<<endl;
+			cout<<"2)Delete from the queue"<<endl;
+			cout<<"3)Display the queue"<<endl;
+			cout<<"4)Exit"<<endl;
+			cout<<"Enter choice: "<<endl;
+			cin>>num2;
+            switch (num2)
+		   {
+                case 1: Enqueue();
+                        break;
+                case 2: Dequeue();
+                        break;
+                case 3: Display();
+                        break;
+                case 4: cout<<"Exit"<<endl;
+                        exit(1);
+                        break;        
+            }
+            cout<<"press 1 to continue in queue:"<<endl;
+            cin>>op1;
+		 }while(op1==1);
+	}
+//-----------------------------------------------------------------------------------------------------------//
+void Enqueue()
+{
+   int value;
+   if (rear == m - 1)
+      cout<<"Queue Overflow"<<endl;
+   else {
+      if (front == - 1)
+        front = front+1;
+        cout<<"Insert the element in queue : "<<endl;
+        cin>>value;
+        rear++;
+        queue[rear] = value;
+   }
+}
+//------------------------------------------------------------------------------------------------------------------//
+void Dequeue() 
+{
+   if (front == - 1 || front > rear) {
+      cout<<"Queue Underflow ";
+   return ;
+   } else {
+      cout<<"Element deleted from queue is : "<< queue[front] <<endl;
+      front++;;
+   }
+}
+//-------------------------------------------------------------------------------------------------------------------//
+void Display() 
+{
+   if (front == - 1)
+   cout<<"Queue is empty"<<endl;
+   else {
+      cout<<"Queue elements are : ";
+      for (int i = front; i <= rear; i++)
+         cout<<queue[i]<<" ";
+      cout<<endl;
+   }
+}
+//=================================Queue completed====================================================//
+void linear_search()//function 5= linear search//
+{
+	cout<<"LINEAR SEARCH"<<endl;
+	cout<<"Enter the array size : ";
+	cin>>z;
+	cout<<"Enter Array Elements : ";
+	for(i=0; i<z; i++)
+	{
+		cin>>arr[i];
+	}
+	cout<<"Enter the number to be search : ";
+	cin>>num;
+	for(i=0; i<z; i++)
+	{
+		if(arr[i]==num)
+		{
+			c=1;
+			pos=i+1;
+			break;
+		}
+	}
+	if(c==0)
+	{
+		cout<<"Number not found..!!";
+	}
+	else
+	{
+		cout<<num<<" found at position "<<pos;
+	}
+}
+//==================================Linear Searching Complete=======================//
+//Sarthak ends//
+
+
+
+
+
+
 
