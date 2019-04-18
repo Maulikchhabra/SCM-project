@@ -130,3 +130,21 @@ void insertbegin()
 	}
 }
 //----------------------------------------------------------------------------------------------------//
+//Insertion at end of Linked List
+void insertlast()
+{
+	int value;
+	cout<<"Enter value to be inserted:"<<endl;
+	cin>>value;
+	struct node *temp,*s;
+	temp=createnode(value);
+	s=start;
+	while(s->next!=NULL)
+	{
+		s=s->next;
+	}
+	temp->next=NULL;
+	s->next=temp;
+	cout<<"Element inserted at last:"<<endl; 
+}
+//----------------------------------------------------------------------------------------------------//
