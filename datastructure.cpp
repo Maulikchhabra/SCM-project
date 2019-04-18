@@ -4,6 +4,14 @@
 //header files//
 using namespace std;
 //--------------------------------------------------------------------------------------------------------//
+struct node
+{
+	int info;
+	struct node *next;
+};
+struct node* start;
+//Declaring Structure
+//--------------------------------------------------------------------------------------------------------//
 //variable declarations//
 int stack[100],n=100,top=-1;
 int queue[100], m = 100, front = - 1, rear = - 1;
