@@ -109,3 +109,24 @@ node* createnode(int value)
     }
 }
 //-----------------------------------------------------------------------------------------------------//
+//Insertion at beginning of Linked List
+void insertbegin()
+{
+	int value;
+	cout<<"Enter the value to be inserted:"<<endl;
+	cin>>value;
+	struct node *temp,*p;
+	temp=createnode(value);
+	if(start==NULL)
+	{
+		start =temp;
+		start->next =NULL;
+	}
+	else
+	{
+		p=start;
+		start=temp;
+		start->next =p;
+	}
+}
+//----------------------------------------------------------------------------------------------------//
