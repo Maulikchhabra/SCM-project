@@ -83,4 +83,144 @@ void display1()
         cout<<"Stack is empty";
 }
 //=============================Stack completed=======================//
+//Krishan starts//
+void circularqueue()//function 3= circular queue//
+{
+	int num3,val,op2;
+	void enqueueCQ(int val);
+	void dequeueCQ();
+	void displayCQ();
+	do
+	{
+	    cout<<"CIRCULAR QUEUE IMPLEMENTATION"<<endl;
+	    cout<<"1)Insert in circular queue"<<endl;
+	    cout<<"2)Delete in circular queue"<<endl;
+	    cout<<"3)Show the circular queue"<<endl;
+	    cout<<"Enter the choice:"<<endl;
+	    cin>>num3;
+	    switch(num3)
+	    {
+	    	case 1:cout<<"Enter value to be inserted:"<<endl;
+	    	       cin>>val;
+	    	       enqueueCQ(val);
+	    	       break;
+	    	case 2:dequeueCQ();
+			       break;
+			case 3:displayCQ();
+			       break;	  
+			default:cout<<"Enter valid choice"<<endl;
+			        break;	           
+		}
+		cout<<"press 2 to continue in circular queue:"<<endl;
+		cin>>op2;
+    }while(op2==2);
+}
+//------------------------------------------------------------------------------------------------------------//
+bool isempty()
+{
+	if(front1==-1&&rear==-1)
+	  return true;
+	else 
+	  return false;  
+}
+//-----------------------------------------------------------------------------------------------------------------//
+void enqueueCQ(int val)
+{
+  if((rear1+1)%size==front1)
+    cout<<"queue is full\n";
+  else
+  {
+  	if(front1==-1)
+  	  front1=0;
+  	  rear1=(rear1+1)%size;
+  	  cqueue[rear1]=val;
+	}  
+}
+//-----------------------------------------------------------------------------------------------------------------//
+void dequeueCQ() 
+{
+   if(isempty())
+   {
+   	 cout<<"Queue is empty\n";
+   }
+   else 
+   {
+   	 if(front1==rear1)
+   	    front1=rear1=-1;
+   	 else
+		front1=(front1+1)%size;   
+   }	
+}
+//-----------------------------------------------------------------------------------------------------------------//
+void displayCQ()
+{
+   if(isempty())
+     cout<<"Queue is empty\n";
+   else
+   {
+     int i;
+   	 if(front1 <= rear1)
+   	 { 
+   	    for(i=front1;i<=rear1;i++)
+		   cout<<cqueue[i]<<"";	
+	 }
+	 else
+	 {
+	    i=front1;
+	    while(i<size)
+		{
+			cout<<cqueue[i]<<"";
+			i++;
+		}
+		i=0;
+		while(i<=rear1)
+		{
+			cout<<cqueue[i]<<"";
+			i++;
+		} 
+	 }
+	}  
+}
+//=========================Circular Queue Completed=================================//
+void binary_search1()//function 6= binary search//
+{
+	cout<<"BINARY SEARCH"<<endl;
+	cout<<"Enter total number of elements :";
+	cin>>a;
+	cout<<"Enter "<<a<<" number :";
+	for (j=0; j<a; j++)
+	{
+		cin>>array[j];
+	}
+	cout<<"Enter a number to find :";
+	cin>>search1;
+	first = 0;
+	last = a-1;
+	middle = (first+last)/2;
+	while (first <= last)
+	{
+		if(array[middle] < search1)
+		{
+			first = middle + 1;
+
+		}
+		else if(array[middle] == search1)
+		{
+			cout<<search1<<" found at location "<<middle+1<<"\n";
+			break;
+		}
+		else
+		{
+			 last = middle - 1;
+		}
+		middle = (first + last)/2;
+	}
+	if(first > last)
+	{
+		cout<<"Not found! "<<search1<<" is not present in the list.";
+	}
+}
+//==========================Binary Searching complete===========================================//
+//Krishan ends//
+
 
