@@ -148,3 +148,50 @@ void insertlast()
 	cout<<"Element inserted at last:"<<endl; 
 }
 //----------------------------------------------------------------------------------------------------//
+void insertpos()
+{
+	int value,pos,count=0;
+	cout<<"Enter value to be inserted:"<<endl;
+	cin>>value;
+	struct node *temp,*s,*ptr;
+	temp=createnode(value);
+	cout<<"Enter the position at which node to be inserted:"<<endl;
+	cin>>pos;
+	 int i;
+    s = start;
+    while (s != NULL)
+    {
+        s = s->next;
+        count++;
+    }
+    if (pos == 1)
+    {
+        if (start == NULL)
+        {
+            start = temp;
+            start->next = NULL;
+        }
+        else
+        {
+            ptr = start;
+            start = temp;
+            start->next = ptr;
+        }
+    }
+    else if (pos > 1  && pos <= count)
+    {
+        s = start;
+        for (i = 1; i < pos; i++)
+        {
+            ptr = s;
+            s = s->next;
+        }
+        ptr->next = temp;
+        temp->next = s;
+    }
+    else
+    {
+        cout<<"Positon out of range"<<endl;
+    }
+}
+//----------------------------------------------------------------------------------------------------//
