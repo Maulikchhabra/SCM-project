@@ -689,4 +689,28 @@ void display()
 int main()
 {
 	cout<<"HELLO THERE"<<endl;
+	cout<<"1)Stack implementation"<<endl;
+        cout<<"2)Simple Queue implementation"<<endl;
+	cout<<"3)Circular Queue implementation"<<endl;   	   
+	cout<<"4)Linked list implementation"<<endl;
+	cout<<"5)Linear searching"<<endl;
+	cout<<"6)Binary Searching"<<endl;  	
+        cout<<"Enter choice: 1,2,3,4,5,6: "<<endl;
+        cin>>n1;
+        switch(n1)
+	{
+                 case 1 :stack1();
+                         break;		
+		 case 2 :queue1(); 
+		         break;
+		 case 3 :circularqueue();
+		         break;
+		 case 4 :singlelinkedlist();
+		         break;
+		 case 5 :linear_search();
+		         break;
+		 case 6 :binary_search1();
+		         break;		 		 		         
+        }
+	return 0;
 }	
