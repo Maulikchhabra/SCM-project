@@ -16,3 +16,5 @@ The main advantage of the Forking Workflow is that contributions can be integrat
   
   
 The Forking Workflow typically follows a branching model based on the Gitflow Workflow. This means that complete feature branches will be purposed for merge into the original project maintainer's repository. The result is a distributed workflow that provides a flexible way for large, organic teams (including untrusted third-parties) to collaborate securely. This also makes it an ideal workflow for open source projects.
+
+Acknowledgements for forking workflow: https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
