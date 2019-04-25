@@ -1,0 +1,3 @@
+#ignore all text files except content.txt
+*.txt
+!content.txt
