@@ -118,11 +118,11 @@ void queue1()//function 2= queue implementation//
               }while(op1==1);
 	}
 //-----------------------------------------------------------------------------------------------------------//
-void Enqueue()//add the value in queue//
+void Enqueue()
 {
    int value;
    if (rear == m - 1)
-      cout<<"Queue Overflow"<<endl;//queue full//
+      cout<<"Queue Overflow"<<endl;
    else {
       if (front == - 1)
         front = front+1;
@@ -133,10 +133,10 @@ void Enqueue()//add the value in queue//
    }
 }
 //------------------------------------------------------------------------------------------------------------------//
-void Dequeue() 
+void Dequeue() //delete an element from queue//
 {
    if (front == - 1 || front > rear) {
-      cout<<"Queue Underflow ";
+      cout<<"Queue Underflow ";//queue empty//
    return ;
    } else {
       cout<<"Element deleted from queue is : "<< queue[front] <<endl;
