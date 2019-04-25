@@ -143,10 +143,10 @@ void Enqueue()//add the value in queue//
    }
 }
 //------------------------------------------------------------------------------------------------------------------//
-void Dequeue() 
+void Dequeue() //to delete element from queue//
 {
    if (front == - 1 || front > rear) {
-      cout<<"Queue Underflow ";
+      cout<<"Queue Underflow ";//queue empty//
    return ;
    } else {
       cout<<"Element deleted from queue is : "<< queue[front] <<endl;
