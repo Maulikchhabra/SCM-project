@@ -50,7 +50,8 @@ void stack1()//function 1 =stack implementation//
 		         } while(op==0);
 }
 //-------------------------------------------------------------------------------------------------------------//
-void push(int val) {
+void push(int val)//to add value in stack//
+{
     if(top>=n-1)
         cout<<"Stack Overflow"<<endl; //stack is full//
     else
@@ -60,7 +61,8 @@ void push(int val) {
     }
 }
 //-----------------------------------------------------------------------------------------------------------//
-void pop() {
+void pop()//to delete the element in stack//
+{
     if(top<=-1)
         cout<<"Stack Underflow"<<endl;//stack empty//
     else
@@ -70,7 +72,7 @@ void pop() {
     }
 }
 //--------------------------------------------------------------------------------------------------------------//
-void display1()
+void display1()//to display the stack//
  {
     if(top>=0) 
 	{
