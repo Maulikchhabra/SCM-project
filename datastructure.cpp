@@ -21,14 +21,14 @@ void stack1()//function 1 =stack implementation//
 	int num1, val,op;
 	        do 
 			{
-			   cout<<"STACK IMPLEMENTATION"<<endl;
+			   cout<<"STACK IMPLEMENTATION"<<endl;//for printing//
                            cout<<"1) Push in stack"<<endl;
                            cout<<"2) Pop from stack"<<endl;
                            cout<<"3) Display stack"<<endl;
                            cout<<"4) Exit"<<endl;
                            cout<<"Enter choice: 1,2,3,4 "<<endl;
                            cout<<"\n";
-                           cin>>num1;
+                           cin>>num1;//to insert value of num 1//
 			   switch(num1)
 			   {    
 			       case 1:cout<<"Enter value to be pushed:"<<endl;
