@@ -1,0 +1,10 @@
+Introduction to the project: README.md
+
+Contents of the project:
+
+1.Stack Implementation
+2.Queue Implementation
+3.Circular Queue Implementation
+4.Singly Linked List
+5.Linear Search
+6.Binary Search
