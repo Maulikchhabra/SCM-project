@@ -118,11 +118,11 @@ void queue1()//function 2= queue implementation//
               }while(op1==1);
 	}
 //-----------------------------------------------------------------------------------------------------------//
-void Enqueue()
+void Enqueue()//add the value in queue//
 {
    int value;
    if (rear == m - 1)
-      cout<<"Queue Overflow"<<endl;
+      cout<<"Queue Overflow"<<endl;//queue full//
    else {
       if (front == - 1)
         front = front+1;
