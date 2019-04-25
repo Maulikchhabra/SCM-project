@@ -37,6 +37,7 @@ void stack1()//function 1 =stack implementation//
                            cout<<"\n";
                            cin>>num1;//cin is for accepting the value//
 			   switch(num1)
+				   
 			   {    
 			       case 1:cout<<"Enter value to be pushed:"<<endl;
                                       cin>>val;
