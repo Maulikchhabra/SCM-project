@@ -167,6 +167,7 @@ void Display()
    }
 }
 //=================================Queue completed====================================================//
+
 void linear_search()//function 5= linear search//
 {
 	cout<<"LINEAR SEARCH"<<endl;
