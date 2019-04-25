@@ -4,6 +4,7 @@
 //header files//
 using namespace std;
 //namespace//
+
 //--------------------------------------------------------------------------------------------------------//
 //variable declarations//
 int stack[100],n=100,top=-1;
@@ -166,6 +167,7 @@ void Display()
    }
 }
 //=================================Queue completed====================================================//
+
 void linear_search()//function 5= linear search//
 {
 	cout<<"LINEAR SEARCH"<<endl;
