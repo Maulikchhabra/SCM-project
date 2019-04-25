@@ -52,7 +52,7 @@ void stack1()//function 1 =stack implementation//
 //-------------------------------------------------------------------------------------------------------------//
 void push(int val) {
     if(top>=n-1)
-        cout<<"Stack Overflow"<<endl; 
+        cout<<"Stack Overflow"<<endl; //stack is full//
     else
 	{
         top++;
@@ -62,7 +62,7 @@ void push(int val) {
 //-----------------------------------------------------------------------------------------------------------//
 void pop() {
     if(top<=-1)
-        cout<<"Stack Underflow"<<endl;
+        cout<<"Stack Underflow"<<endl;//stack empty//
     else
 	{
         cout<<"The popped element is "<< stack[top] <<endl;
