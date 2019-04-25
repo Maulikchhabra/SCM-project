@@ -4,6 +4,7 @@
 //header files//
 using namespace std;
 //namespace//
+
 //--------------------------------------------------------------------------------------------------------//
 //variable declarations//
 int stack[100],n=100,top=-1;
