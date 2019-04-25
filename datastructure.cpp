@@ -21,14 +21,14 @@ void stack1()//function 1 =stack implementation//
 	int num1, val,op;
 	        do 
 			{
-			   cout<<"STACK IMPLEMENTATION"<<endl;
+			   cout<<"STACK IMPLEMENTATION"<<endl;//cout is for print//
                            cout<<"1) Push in stack"<<endl;
                            cout<<"2) Pop from stack"<<endl;
                            cout<<"3) Display stack"<<endl;
                            cout<<"4) Exit"<<endl;
                            cout<<"Enter choice: 1,2,3,4 "<<endl;
                            cout<<"\n";
-                           cin>>num1;
+                           cin>>num1;//cin is for accepting the value//
 			   switch(num1)
 			   {    
 			       case 1:cout<<"Enter value to be pushed:"<<endl;
@@ -53,7 +53,7 @@ void stack1()//function 1 =stack implementation//
 void push(int val)//to add value in stack//
 {
     if(top>=n-1)
-        cout<<"Stack Overflow"<<endl; 
+        cout<<"Stack Overflow"<<endl; //stack is full//
     else
 	{
         top++;
@@ -64,7 +64,7 @@ void push(int val)//to add value in stack//
 void pop()//to delete the element in stack//
 {
     if(top<=-1)
-        cout<<"Stack Underflow"<<endl;
+        cout<<"Stack Underflow"<<endl;//stack empty//
     else
 	{
         cout<<"The popped element is "<< stack[top] <<endl;
@@ -120,11 +120,11 @@ void queue1()//function 2= queue implementation//
               }while(op1==1);
 	}
 //-----------------------------------------------------------------------------------------------------------//
-void Enqueue()
+void Enqueue()//add the value in queue//
 {
    int value;
    if (rear == m - 1)
-      cout<<"Queue Overflow"<<endl;
+      cout<<"Queue Overflow"<<endl;//queue full//
    else {
       if (front == - 1)
         front = front+1;
@@ -135,10 +135,10 @@ void Enqueue()
    }
 }
 //------------------------------------------------------------------------------------------------------------------//
-void Dequeue() 
+void Dequeue() //to delete element from queue//
 {
    if (front == - 1 || front > rear) {
-      cout<<"Queue Underflow ";
+      cout<<"Queue Underflow ";//queue empty//
    return ;
    } else {
       cout<<"Element deleted from queue is : "<< queue[front] <<endl;
@@ -688,6 +688,8 @@ void display()
     cout<<"NULL"<<endl;
 }
 //====================================Single linked list completed====================//
+//--------------------------------------------------------------------------------------------------------//
+
 //Kshitiz ends//
 int main()
 {
